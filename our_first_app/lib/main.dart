@@ -2,6 +2,8 @@ import 'package:flutter/material.dart'; //One of most important files containing
 
 void main() {
   //Auto executed by flutter and dart
+  runApp(
+      MyApp()); //Function which draws our widgets to the screen, calling its constructor
 }
 
 class MyApp extends StatelessWidget {
@@ -10,7 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     //Special object holding our apps meta info
-    return MaterialApp(home: Text('Hello!'));
+    return MaterialApp(
+        home: Text(
+      'Hello!',
+    ));
   }
 }
 
@@ -26,7 +31,11 @@ MyApp - Pascal Case / UpperCamelCase / How you should always name your classes
 methods in class - functions
 variables in class - properties
 functions can take parameters in their curly braces
-MaterialApp() - A Class that dose base setup to turn our combo of widgets into a real app that can be rendered
+MaterialApp() - A Class that dose base setup to turn our combo of widgets 
+  into a real app that can be rendered
 home: - most important widget which mounts our app to the screen
 
+Cool thing about flutter is we dont have to render anything, or 
+    positon it manually, instead we just decide what goes on our screen, and how 
+    without ever using the mouse
 */
